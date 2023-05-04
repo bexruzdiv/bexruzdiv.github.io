@@ -25,7 +25,7 @@
     width: 0px;
     left: 0;
     bottom: 10px;
-    background: #ff0000;
+    background: #060505;
     transition: all .5s ease;
 }
 
@@ -61,4 +61,104 @@
 
 .calculatorMenu {
     width: 400px;
+}
+
+
+/* teng tomonli */
+
+.button-89 {
+    margin-top: 20px;
+    display: inline-block;
+    --b: 4px;
+    /* border thickness */
+    --s: .45em;
+    /* size of the corner */
+    --color: #373B44;
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background: conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 22px;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible {
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+}
+
+.button-89:active {
+    background: var(--color);
+    color: #fff;
+}
+
+
+/* Input elementiga uyg'un ko'rinish */
+
+.input1 {
+    border: 2px solid #ccc;
+    /* Cheklo */
+    border-radius: 4px;
+    /* Kengaytma radiusi */
+    padding: 8px 12px;
+    /* Tekislik */
+    font-size: 16px;
+    /* Matn o'lchami */
+    transition: border-color 0.2s ease-in-out;
+    /* Animatsiya davomiyligi */
+    display: inline;
+    float: left;
+}
+
+
+/* Kursor input ustida turarligi uchun animatsiyali ko'rinish */
+
+.input1:focus {
+    outline: none;
+    /* Burch yo'qotish */
+    border-color: #007bff;
+    /* Cheklo rangi */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    /* Ko'prik */
+}
+
+
+/* Foydalanuvchi inputni to'ldirishga boshlasa */
+
+.input1:valid {
+    border-color: #28a745;
+    /* To'g'ri rangi */
+}
+
+
+/* Foydalanuvchi inputni to'ldirmasa */
+
+.input1:invalid {
+    border-color: #dc3545;
+    /* Noto'g'ri rangi */
+}
+
+#H3 {
+    background-color: white;
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    border-color: #007bff;
+    margin-top: 30px;
+    text-align: center;
+    padding-top: 9px;
+    color: black;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
 }

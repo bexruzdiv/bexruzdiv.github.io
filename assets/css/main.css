@@ -1464,13 +1464,13 @@ section:last-child,
 /* Content */
 
 #content {
-    background: #00000000 url("images/bg04.png");
+    background: #5f5959eb url("images/bg04.png");
     border-top: solid 1px #fff;
     padding: 45px 0 45px 0;
 }
 
 #content section {
-    background: #ffffff;
+    background: #676767;
     padding: 40px 30px 45px 30px;
     box-shadow: 2px 2px 2px 1px rgba(128, 128, 128, 0.1);
     margin: 0 0 25px 0;
@@ -1478,7 +1478,7 @@ section:last-child,
 }
 
 .content section {
-    width: 1160px;
+    width: 1120px;
 }
 
 #content h2 {
